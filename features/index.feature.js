@@ -6,7 +6,7 @@ describe('User can input a value and get FizzBuzz results', () => {
     before(async () => {
         await  browser.init()
         await  browser.visitPage('http://localhost:8080/')
-    });
+    })
 
     beforeEach(async () => {
         await  browser.page.reload();
