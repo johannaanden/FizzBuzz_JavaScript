@@ -16,30 +16,30 @@ describe('User can input a value and get FizzBuzz results', () => {
         await  browser.close();
     })
 
-    it('clicking on the "Check" button', async () => {
+    it('clicking on the "Magic" button', async () => {
         await browser.fillIn("input[id='value']", { with: "1" })
-        await browser.clickOnButton("input[value='Check']")
+        await browser.clickOnButton("input[value='Magic button']")
         let content = await browser.getContent("[id='display_answer']")
         expect(content).to.eql('1');
       })
 
-    it('clicking on the "Check" button', async () => {
+    it('clicking on the "Magic" button', async () => {
         await browser.fillIn("input[id='value']", { with: "3" })
-        await browser.clickOnButton("input[value='Check']")
+        await browser.clickOnButton("input[value='Magic button']")
         let content = await browser.getContent("[id='display_answer']")
         expect(content).to.eql('Fizz');
     })
 
-    it('clicking on the "Check" button', async () => {
+    it('clicking on the "Magic" button', async () => {
         await browser.fillIn("input[id='value']", { with: "5" })
-        await browser.clickOnButton("input[value='Check']")
+        await browser.clickOnButton("input[value='Magic button']")
         let content = await browser.getContent("[id='display_answer']")
         expect(content).to.eql('Buzz');
     })
 
-    it('clicking on the "Check" button', async () => {
+    it('clicking on the "Magic" button', async () => {
         await browser.fillIn("input[id='value']", { with: "15" })
-        await browser.clickOnButton("input[value='Check']")
+        await browser.clickOnButton("input[value='Magic button']")
         let content = await browser.getContent("[id='display_answer']")
         expect(content).to.eql('FizzBuzz');
     })
