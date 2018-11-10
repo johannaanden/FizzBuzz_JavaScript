@@ -43,4 +43,4 @@ describe('User can input a value and get FizzBuzz results', () => {
         let content = await browser.getContent("[id='display_answer']")
         expect(content).to.eql('FizzBuzz');
     })
-})
+});
