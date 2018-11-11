@@ -80,43 +80,43 @@ In your README to the best of your knowledge please write a line to line explana
     </script>
 ```
 ## Answer
-`<script src="src/js/fizz-buzz.js"></script>`
+`<script src="src/js/fizz-buzz.js"></script>`  
 Implements script to the HTML file. The script is linked from this source: src/js/fizz-buzz.js.
 
-`<script>`
+`<script>`  
 Opens the script tag in the HTML file.
 
-`document.addEventListener('DOMContentLoaded', () => {`
+`document.addEventListener('DOMContentLoaded', () => {`  
 Adds an event listener that runs when the page has been loaded.
 
-`let button = document.getElementById('button')`
+`let button = document.getElementById('button')`  
 Declare variable button, and the getElementById() method returns the element that has the ID attribute button.
 
-`let displayDiv = document.getElementById('display_answer')`
+`let displayDiv = document.getElementById('display_answer')`  
 Declare variable displayDiv, and the getElementById() method returns the element that has the ID attribute display_answer.
 
-`button.addEventListener('click', () =>{`
+`button.addEventListener('click', () =>{`  
 Creates a click event to a the button variable. It's waiting for a 'click', and once the button is clicked on it will run the code inside.
 
-`let value = document.getElementById('value').value`
+`let value = document.getElementById('value').value`  
 Declare variable value, and the getElementById() method returns the element that has the ID attribute value.
 
-`let fizzBuzz = new FizzBuzz`
+`let fizzBuzz = new FizzBuzz`  
 Declare variable fizzBuzz and assigns it.
 
-`let result = fizzBuzz.check(value)`
+`let result = fizzBuzz.check(value)`  
 Declare variable result and assigns it the result of calling the check function in fizzBuzz with the value from the input field.
 
-`displayDiv.innerHTML = result;`
+`displayDiv.innerHTML = result;`  
 Finds the innerHTML of the displayDiv variable ('display_answer') and assign it the result.
 
-`})`
+`})`  
 Closing.
 
-`})`
+`})`  
 Closing.
 
-`</script>`
+`</script>`  
 Closing the script tag in the HTML file.
 ________________
 ## Question 8. 
