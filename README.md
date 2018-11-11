@@ -1,3 +1,15 @@
+# FizzBuzz
+This is the weekend challenge where we revisit the FizzBuzz challenge from the prep course.  
+This program is built by Johanna Andén.  
+
+# Run the program
+To run my FizzBuzz program, visit https://johannaanden.github.io/FizzBuzz_JavaScript/  
+
+#### Fill in a number in the green circle
+1. Click on the Magic button
+2. You will now recive you result
+3. Do you wanna try again? Just repeat step 1-3!  
+
 # Question from the course material
 
 ## Question 1. 
