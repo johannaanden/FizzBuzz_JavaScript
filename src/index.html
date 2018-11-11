@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FizzBuzz</title>
-</head>
-<body>
-        <input type="text" id="value">
-        <input type="submit" value="Check" id="button">
-        <div id="display_answer"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <title>FizzBuzz</title>
+    </head>
+
+    <body class="bg-orange">
+        <h1 class="flex justify-center mt-16 text-pink"><i class="fas fa-grin-stars"></i> Let's play FizzBuzz <i class="fas fa-grin-stars"></i></h1>
+        <p class="flex justify-center  mt-8 text-yellow">Will you be FizzBuzz today?</p>
+        <p class="flex justify-center text-yellow">Enter a number below and tap the magic button to find out</p>
+        
+        <div class="flex justify-center mt-5">
+            <input class="bg-teal-lighter text-green-dark text-center text-lg rounded-full h-16 w-16 flex items-center justify-center" type="text" id="value">
+        </div>
+        
+        <div class="flex justify-center">
+            <input class="mt-3 bg-green hover:bg-green-light text-white font-bold py-2 px-4 border-b-4 border-green-dark hover:border-green rounded" type="submit" value="Magic button" id="button">
+        </div>
+            
+        <div class="flex justify-center bg-orange text-pink-dark text-5xl mt-3" id="display_answer"></div>
 
         <script src="./js/fizz-buzz.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () =>{
-                let value = document.getElementById('value').value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                displayDiv.innerHTML = result;
-            })
-        })
-    </script>
-</body>
+            <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let button = document.getElementById('button')
+                let displayDiv = document.getElementById('display_answer')
+                    button.addEventListener('click', () =>{
+                        let value = document.getElementById('value').value
+                        let fizzBuzz = new FizzBuzz
+                        let result = fizzBuzz.check(value)
+                        displayDiv.innerHTML = result;
+                    })
+                })
+            </script>
+    </body>
 </html>
